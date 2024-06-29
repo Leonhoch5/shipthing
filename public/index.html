@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Battleship Game</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+    <div id="placeShips" style="display: none;">
+        <h2>Place Your Ships</h2>
+        <canvas id="playerBoardPlacement" width="500" height="500"></canvas>
+        <button id="donePlacingButton">Done Placing Ships</button>
+    </div>
+    <div id="gameBoard" style="display: none;">
+        <h2>Battleship</h2>
+        <div class="boards">
+            <canvas id="playerBoard" width="500" height="500"></canvas>
+            <canvas id="opponentBoard" width="500" height="500"></canvas>
+        </div>
+        <button id="pauseButton">Pause</button>
+    </div>
+    <div id="gameOver" style="display: none;">
+        <h2 id="winner"></h2>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <div id="pauseMenu" style="display: none;">
+        <h2>Game Paused</h2>
+        <button id="resumeButton">Resume Game</button>
+        <button id="menuButton">Main Menu</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
